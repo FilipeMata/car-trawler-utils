@@ -1,0 +1,13 @@
+{
+    "VehRentalCore": {
+        "@PickUpDateTime": "2020-03-22T10:00:00Z",
+        "@ReturnDateTime": "2020-04-06T10:00:00Z",
+        "PickUpLocation": {
+            "@Name": "Las Vegas - Airport"
+        },
+            "ReturnLocation": {
+            "@Name": "Las Vegas - Airport"
+        }
+    },
+    "VehVendorAvails": []
+}

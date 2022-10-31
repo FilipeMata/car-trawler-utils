@@ -1,0 +1,5 @@
+{
+    "dependencies": {
+      "car-trawler-utils": "https://github.com/FilipeMata/car-trawler-utils"
+    }
+}

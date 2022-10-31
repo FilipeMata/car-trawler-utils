@@ -1,0 +1,45 @@
+{
+    "VehRentalCore": {
+        "@PickUpDateTime": "2020-03-22T10:00:00Z",
+        "@ReturnDateTime": "2020-04-06T10:00:00Z",
+        "PickUpLocation": {
+            "@Name": "Las Vegas - Airport"
+        },
+            "ReturnLocation": {
+            "@Name": "Las Vegas - Airport"
+        }
+    },
+    "VehVendorAvails": [
+        {
+            "Vendor": {
+                "@Code": "2338",
+                "@Name": "HERTZ"
+            },
+            "VehAvails": [
+                {
+                    "@Status": "Available",
+                    "Vehicle": {
+                        "@AirConditionInd": "true",
+                        "@TransmissionType": "Automatic",
+                        "@FuelType": "Petrol",
+                        "@DriveType": "Unspecified",
+                        "@PassengerQuantity": "5",
+                        "@BaggageQuantity": "2",
+                        "@Code": "CDAR",
+                        "@CodeContext": "CARTRAWLER",
+                        "@DoorCount": "5",
+                        "VehMakeModel": {
+                            "@Name": "Ford Focus or similar"
+                        },
+                        "PictureURL": "https://ctimg-fleet.cartrawler.com/ford/focus/primary.png?auto=format&w=600"                
+                    },
+                    "TotalCharge": {
+                        "@RateTotalAmount": "731.49",
+                        "@EstimatedTotalAmount": "731.49",
+                        "@CurrencyCode": "CAD"
+                    }
+                }
+            ]
+        }
+    ]
+}

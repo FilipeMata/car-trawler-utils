@@ -1,0 +1,23 @@
+{
+    "@Status": "Available",
+    "Vehicle": {
+        "@AirConditionInd": "true",
+        "@TransmissionType": "Automatic",
+        "@FuelType": "Petrol",
+        "@DriveType": "Unspecified",
+        "@PassengerQuantity": "5",
+        "@BaggageQuantity": "2",
+        "@Code": "ECAR",
+        "@CodeContext": "CARTRAWLER",
+        "@DoorCount": "2",
+        "VehMakeModel": {
+            "@Name": "Kia Rio or similar"
+        },
+        "PictureURL": "https://ctimg-fleet.cartrawler.com/kia/rio/primary.png?auto=format&w=600"
+    },
+    "TotalCharge": {
+        "@RateTotalAmount": "731.47",
+        "@EstimatedTotalAmount": "731.47",
+        "@CurrencyCode": "CAD"
+    }
+}
