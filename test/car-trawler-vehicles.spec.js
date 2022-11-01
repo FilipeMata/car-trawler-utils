@@ -10,6 +10,8 @@ const CarTrawlerVehicles = require('../lib/car-trawler-vehicles');
 const carsMock = require('./cars.mock.json');
 const APIResponseMock = require('./api-response-mock.json');
 const carsWithoutDuplicationMock = require('./cars-without-duplication.mock.json');
+const carsWithoutDuplicationAndUnavaiableMock = require('./cars-without-duplication-and-unavaiable.mock.json');
+const cheapestOfEachCarModel = require('./cheapest-of-each-car-model.mock.json');
 const cheapestAutomaticCarMock = require('./cheapest-automatic-car.mock.json');
 const filteredCarsWithCDARCodeMock = require('./filtered-cars-with-CDAR-code.mock.json');
 const filteredCarsWithNonExistentCodeMock = require('./filtered-cars-with-nonexistent-code.mock.json');
@@ -55,13 +57,27 @@ describe('CarTrawlerVehicles Tests', () => {
     });
 
     describe('getVehiclesListWithoutDuplicatedVehicleModels Tests', () => {
-        it('should remove duplicate models from list when they exist', () => {
-            const list = carTrawler.getVehiclesListWithoutDuplicatedVehicleModels();
+        it('should remove duplicate models from list when they exist - keeping the unavaiable vehicles', () => {
+            const list = carTrawler.getVehiclesListWithoutDuplicatedVehicleModels(false);
 
             should(_.isEqual(list, carsWithoutDuplicationMock)).be.true();
         });
+
+        it('should remove duplicate models from list when they exist - removing the unavaiable vehicles as well', () => {
+            const list = carTrawler.getVehiclesListWithoutDuplicatedVehicleModels();
+
+            should(_.isEqual(list, carsWithoutDuplicationAndUnavaiableMock)).be.true();
+        });
     });
 
+
+    describe('listCheapestOfEachVehiclesModel Tests', () => {
+        it('should display cheapest of each car model', () => {
+            const cheapestList = carTrawler.listCheapestOfEachVehiclesModel();
+
+            should(_.isEqual(cheapestList, cheapestOfEachCarModel)).be.true();
+        });
+    });
 
     describe('getCheapestVehicleByType Tests', () => {
         it('should get cheapest automatic car when args are: @TransmissionType, Automatic', () => {

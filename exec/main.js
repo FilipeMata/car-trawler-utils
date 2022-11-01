@@ -15,9 +15,9 @@ async function run() {
     console.dir(listWithoutDuplicates, {depth: null});
 
     console.log('-------------------------------------------------------');
-    console.log('Getting the cheapest automatic car...');
-    const cheapestAutomatic = carTrawler.getCheapestVehicleByType('@TransmissionType', 'Automatic');
-    console.dir(cheapestAutomatic, {depth: null});
+    console.log('Display cheapest of each car type...');
+    const cheapestList = carTrawler.listCheapestOfEachVehiclesModel();
+    console.dir(cheapestList, {depth: null});
 
     console.log('-------------------------------------------------------');
     console.log('Filtering vehicles by CDAR code');
