@@ -1,4 +1,5 @@
-'use strict'
+/* eslint-disable no-undef */
+'use strict';
 
 const should = require('should');
 const sinon = require('sinon');
